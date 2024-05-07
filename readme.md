@@ -22,7 +22,7 @@ The implementation is based off of the "Ray Tracing over the Weekend" guide, so 
 - `transform.h`: This header and implementation file is a helper class (composed of static functions) to manage the transformations of the mesh easier. The eigen class is used (included in the directory) to manage the complex matrix math and management. This class supports basic transformations such as scale, rotate, and translations.
 
 ## Comparison Between POVray and the Ray Tracer
-- `Render Times`: The main difference that I noticed between the two is that my implementation of the ray tracer is maginitudes slower. The 240 frames took approximately 10 hours to render and save, while the 240 frames from the povray took less than 10 minutes. This is mainly due to the fact that the guide "Ray Tracer over the Weekend" prioritizes code simplicity and readability over runtime efficiency for the sake of the readers. 
+- `Render Times`: The main difference that I noticed between the two is that my implementation of the ray tracer is magnitudes slower. The 240 frames took approximately 10 hours to render and save, while the 240 frames from the povray took less than 10 minutes. This is mainly due to the fact that the guide "Ray Tracer over the Weekend" prioritizes code simplicity and readability over runtime efficiency for the sake of the readers. 
 - `Capabilities`: I can't comment on this too much because my knowledge of POV ray is very limited. I tried to create a similar scene in povray, but as you can see from the videos in custom scenes it wasn't exactly the same. I'm sure that POV ray has many features that dwarf this code in terms of use. 
 
 ## A Word on the Orbit Math
