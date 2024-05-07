@@ -12,7 +12,7 @@ int main() {
     using namespace std;
 
     // Constants for the animation
-    const int num_frames = 264; // Number of frames in the animation
+    const int num_frames = 240; // Number of frames in the animation
     const double orbit_radius = 5.0;
     const double orbit_speed = 2 * pi / 120; // Complete orbit in every "5" seconds
     const double rotation_speed = 0.1; // Rotation speed for the icosphere
@@ -23,7 +23,6 @@ int main() {
     // Materials
     auto sphere_material   = make_shared<metal>(color(0.8, 0.8, 0.8),0.0);
     auto icosphere_material = make_shared<dielectric>(1.33);
-    
 
     // Camera setup
     camera cam;
@@ -71,7 +70,7 @@ int main() {
     }
 
     // Animation loop
-    for (int frame = 240; frame < num_frames; ++frame) {
+    for (int frame = 0; frame < num_frames; ++frame) {
         double theta = orbit_speed * frame;
     
         // Calculate orbit position
