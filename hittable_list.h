@@ -19,6 +19,10 @@ class hittable_list : public hittable {
         objects.push_back(object);
     }
 
+    void remove(shared_ptr<hittable> object) {
+        objects.erase(std::remove(objects.begin(), objects.end(), object), objects.end());
+    }
+
     bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
         hit_record temp_rec;
         bool hit_anything = false;
@@ -34,6 +38,8 @@ class hittable_list : public hittable {
 
         return hit_anything;
     }
+
+
 };
 
 #endif

@@ -1,3 +1,0 @@
-C:/Users/ryan1/Desktop/raytracing/build/CMakeFiles/inOneWeekend.dir
-C:/Users/ryan1/Desktop/raytracing/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/ryan1/Desktop/raytracing/build/CMakeFiles/ZERO_CHECK.dir

@@ -6,6 +6,7 @@
 #include "hittable.h"
 #include "material.h"
 
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 #include <iomanip>
@@ -28,9 +29,11 @@ class camera {
     void render(const hittable& world, int frame_number) {
         initialize();
 
+        std::string output_directory = "frames/";  // Relative path to the working directory
+
         // Creating filename based on frame number
         std::ostringstream filename;
-        filename << "frame" << std::setw(4) << std::setfill('0') << frame_number << ".ppm";
+        filename << output_directory << "frame" << std::setw(4) << std::setfill('0') << frame_number << ".ppm";
 
         // Opening file stream for output
         std::ofstream out(filename.str());
